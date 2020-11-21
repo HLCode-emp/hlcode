@@ -1,0 +1,23 @@
+.container {
+  width: 100vw;
+  max-width: 1048px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.header {
+  background-color: black;
+
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: leixo;
+
+  color: #ff7a00;
+  font-size: 40px;
+}

@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "leixo";
+  src: url("../public/Fonts/Leixo_Demo.TTF");
+}
+
+ .banner{
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+
+  background-image: url("../public/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  width: 100vw;
+  height: 90vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.box_call,
+.box_form_banner{
+  position: relative;
+  z-index: 2;
+}
+
+/* left Box */
+.box_call {
+  width: 50%;
+  float: left;
+  height: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box_call p,
+ .box_call ul {
+  text-align: center;
+  max-width: 400px;
+
+  text-align: center;
+  color: white;
+}
+
+ .box_call p {
+  font-size: 33px;
+}
+
+ .box_call ul {
+  font-size: 28px;
+}
+
+ .box_call .bars {
+  padding: 0 0 30px 0;
+}
+
+ .box_call .bar1,
+ .box_call .bar2 {
+  background-color: #ff7a00;
+
+  height: 1px;
+  width: 420px;
+  margin: 15px 0;
+}
+
+ .box_call .bar2 {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* form */
+ .box_form_banner {
+  height: 750px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  min-width: 275px;
+}
+
+ .background_form_banner {
+  background-color: rgba(187, 187, 187, 0.5);
+
+  width: 100%;
+  max-width: 400px;
+  height: 550px;
+
+  padding: 20px;
+}
+
+ .background_form_banner .form_banner {
+  background-color: #f2f2f2;
+
+  height: 100%;
+
+  padding: 13px;
+
+  text-align: center;
+  color: #707070;
+}
+
+ .background_form_banner .form_banner h2 {
+  font-weight: normal;
+  font-size: 23px;
+}
+
+ .background_form_banner .form_banner p {
+  max-width: 275px;
+  margin: 5px auto;
+
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+ .background_form_banner .form_banner label {
+  display: block;
+  width: 100%;
+  padding: 12px 0 10px 0;
+
+  text-align: left;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+ .background_form_banner .form_banner label input[type="text"],
+ .form_banner label input[type="email"] {
+  width: 70%;
+  height: 28px;
+
+  border: 1px solid silver;
+
+  padding: 0 0 0 5px;
+  margin-top: 5px;
+}
+
+ .background_form_banner .form_banner label textarea {
+  width: 95%;
+  max-width: 320px;
+  height: 75px;
+
+  border: 1px solid silver;
+
+  padding: 5px;
+  margin-top: 5px;
+}
+
+ .background_form_banner .form_banner input[type="submit"] {
+  width: 100px;
+  height: 45px;
+
+  background-color: #ff7a00;
+  color: white;
+  font-size: 19px;
+
+  border: none;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 915px) {
+  .w50{
+      width: 100%;
+      float: none;
+  }
+
+  section.banner .box_call{
+      height: 400px;
+  }
+
+  section.banner .box_form_banner{
+      height: 450px;
+  }
+
+  section.banner{
+      height: 1000px;
+  }
+
+  section.banner .box_call .bar1,
+  section.banner .box_call .bar2{
+      width: 275px;
+  }
+  
+  section.banner .background_form_banner{
+      height: 575px;
+      margin-top: 75px;
+  }
+
+  section.banner .background_form_banner .form_banner label {
+      text-align: center;
+  }
+
+  section.banner .background_form_banner .form_banner label input.space_input{
+      margin-bottom: 15px;
+  }
+
+  section.banner .background_form_banner .form_banner label input[type=text],
+  section.banner .background_form_banner .form_banner label input[type=email]{
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  section.banner{
+      height: 1050px;
+  }
+
+  section.banner .box_call .bar1,
+  section.banner .box_call .bar2{
+      width: 250px;
+  }
+  
+  section.banner .box_form_banner{
+      margin-top: 25px;
+  }
+
+  section.banner .background_form_banner{
+      height: 585px;
+  }
+}
