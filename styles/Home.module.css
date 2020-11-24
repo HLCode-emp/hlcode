@@ -3,7 +3,7 @@
   src: url("../public/Fonts/Leixo_Demo.TTF");
 }
 
- .banner{
+.banner {
   width: 100vw;
   height: 90vh;
   position: relative;
@@ -29,7 +29,7 @@
 }
 
 .box_call,
-.box_form_banner{
+.box_form_banner {
   position: relative;
   z-index: 2;
 }
@@ -47,7 +47,7 @@
 }
 
 .box_call p,
- .box_call ul {
+.box_call ul {
   text-align: center;
   max-width: 400px;
 
@@ -55,20 +55,21 @@
   color: white;
 }
 
- .box_call p {
+.box_call p {
   font-size: 33px;
+  text-align: center;
 }
 
- .box_call ul {
+.box_call ul {
   font-size: 28px;
 }
 
- .box_call .bars {
+.box_call .bars {
   padding: 0 0 30px 0;
 }
 
- .box_call .bar1,
- .box_call .bar2 {
+.box_call .bar1,
+.box_call .bar2 {
   background-color: #ff7a00;
 
   height: 1px;
@@ -76,13 +77,13 @@
   margin: 15px 0;
 }
 
- .box_call .bar2 {
+.box_call .bar2 {
   width: 300px;
   margin: 0 auto;
 }
 
 /* form */
- .box_form_banner {
+.box_form_banner {
   height: 750px;
 
   display: flex;
@@ -94,7 +95,7 @@
   min-width: 275px;
 }
 
- .background_form_banner {
+.background_form_banner {
   background-color: rgba(187, 187, 187, 0.5);
 
   width: 100%;
@@ -104,7 +105,7 @@
   padding: 20px;
 }
 
- .background_form_banner .form_banner {
+.background_form_banner .form_banner {
   background-color: #f2f2f2;
 
   height: 100%;
@@ -115,12 +116,12 @@
   color: #707070;
 }
 
- .background_form_banner .form_banner h2 {
+.background_form_banner .form_banner h2 {
   font-weight: normal;
   font-size: 23px;
 }
 
- .background_form_banner .form_banner p {
+.background_form_banner .form_banner p {
   max-width: 275px;
   margin: 5px auto;
 
@@ -128,7 +129,7 @@
   font-size: 15px;
 }
 
- .background_form_banner .form_banner label {
+.background_form_banner .form_banner label {
   display: block;
   width: 100%;
   padding: 12px 0 10px 0;
@@ -138,8 +139,8 @@
   font-size: 15px;
 }
 
- .background_form_banner .form_banner label input[type="text"],
- .form_banner label input[type="email"] {
+.background_form_banner .form_banner label input[type="text"],
+.form_banner label input[type="email"] {
   width: 70%;
   height: 28px;
 
@@ -149,7 +150,7 @@
   margin-top: 5px;
 }
 
- .background_form_banner .form_banner label textarea {
+.background_form_banner .form_banner label textarea {
   width: 95%;
   max-width: 320px;
   height: 75px;
@@ -160,7 +161,7 @@
   margin-top: 5px;
 }
 
- .background_form_banner .form_banner input[type="submit"] {
+.background_form_banner .form_banner input[type="submit"] {
   width: 100px;
   height: 45px;
 
@@ -172,64 +173,80 @@
 }
 
 /*responsive*/
-
-@media screen and (max-width: 915px) {
-  .w50{
-      width: 100%;
-      float: none;
+@media screen and (max-width: 1140px) {
+  .banner,
+  .overlay {
+    max-width: 100vw;
+    max-height: 90vh;
   }
 
-  section.banner .box_call{
-      height: 400px;
+  .background_form_banner {
+    height: 600px;
   }
 
-  section.banner .box_form_banner{
-      height: 450px;
+  .box_call .bar1{
+    width: 320px;
   }
-
-  section.banner{
-      height: 1000px;
-  }
-
-  section.banner .box_call .bar1,
-  section.banner .box_call .bar2{
-      width: 275px;
-  }
-  
-  section.banner .background_form_banner{
-      height: 575px;
-      margin-top: 75px;
-  }
-
-  section.banner .background_form_banner .form_banner label {
-      text-align: center;
-  }
-
-  section.banner .background_form_banner .form_banner label input.space_input{
-      margin-bottom: 15px;
-  }
-
-  section.banner .background_form_banner .form_banner label input[type=text],
-  section.banner .background_form_banner .form_banner label input[type=email]{
-      width: 90%;
+  .box_call .bar2 {
+    width: 260px;
   }
 }
 
-@media screen and (max-width: 325px) {
-  section.banner{
-      height: 1050px;
+@media screen and (max-width: 760px) {
+
+  .banner,
+  .overlay {
+    max-width: 100vw;
+    max-height: unset;
+    height: 150vh;
+  }
+
+  .box_form_banner {
+    margin-top: 10vh;
+  }
+
+  section.banner .box_call {
+    height: 400px;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  section.banner .box_form_banner {
+    height: 450px;
   }
 
   section.banner .box_call .bar1,
-  section.banner .box_call .bar2{
-      width: 250px;
-  }
-  
-  section.banner .box_form_banner{
-      margin-top: 25px;
+  section.banner .box_call .bar2 {
+    width: 275px;
   }
 
-  section.banner .background_form_banner{
-      height: 585px;
+  section.banner .background_form_banner {
+    height: 615px;
+    margin-top: 75px;
+  }
+
+  section.banner .background_form_banner .form_banner label {
+    text-align: center;
+  }
+
+  section.banner .background_form_banner .form_banner label input.space_input {
+    margin-bottom: 15px;
+  }
+
+  section.banner .background_form_banner .form_banner label input[type="text"],
+  section.banner
+    .background_form_banner
+    .form_banner
+    label
+    input[type="email"] {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .banner,
+  .overlay {
+    height: 60rem;
   }
 }
