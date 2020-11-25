@@ -2,8 +2,8 @@ import Head from 'next/head'
 import styles_main from '../styles/Main.module.css'
 import styles from '../styles/Home.module.css'
 
-function Head_page(){
-  return(
+const Header = (
+  <div>
     <Head>
       <meta charset="utf-8"/>
       <meta name="description" content="Empresa web"/>
@@ -15,8 +15,8 @@ function Head_page(){
       <title>HLCode - Soluções web</title>
 
     </Head>
-  )
-}
+  </div>
+)
 
 const Home_render = (
   <div>
@@ -85,7 +85,7 @@ const Home_render = (
 
 function Home() {
   return (
-    Head_page,
+    Header,
     Home_render
   )
 }
