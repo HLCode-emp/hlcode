@@ -6,9 +6,9 @@ const Header = (
   <div>
     <Head>
       <meta charset="utf-8"/>
-      <meta name="description" content="Empresa web"/>
+      {/* <meta name="description" content="Empresa web"/>
       <meta name="keywords" content="Soluções web, desenvolvimento de sites, desenvolvimento de software, hlcode, jau, jau e região, desenvolvimento web, desenvolvimento full-stack"/>
-      <meta name="author" content="HLCode"/>
+      <meta name="author" content="HLCode"/> */}
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
