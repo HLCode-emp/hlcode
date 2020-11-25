@@ -72,10 +72,6 @@ const Home_render = (
         </div>
       </div>
     </section>
-    <section className={styles.textCaller}>
-      
-    </section>
-  
   </div>
 
 )
