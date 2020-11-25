@@ -2,29 +2,13 @@ import Head from 'next/head'
 import styles_main from '../styles/Main.module.css'
 import styles from '../styles/Home.module.css'
 
-const Header = (
-  <div>
-    <Head>
-      <meta charset="utf-8"/>
-      <meta name="description" content="Empresa web"/>
-      <meta name="keywords" content="Soluções web, desenvolvimento de sites, desenvolvimento de software, hlcode, jau, jau e região, desenvolvimento web, desenvolvimento full-stack"/>
-      <meta name="author" content="HLCode"/>
-
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-      <title>HLCode - Soluções web</title>
-
-    </Head>
-  </div>
-)
-
 const Home_render = (
   <div>
     {/* header */}
     <Head>
-      <title>HLCode - Soluções web</title>
+      <title>HLCode - Soluções digitais</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="Empresa web"/>
+      <meta name="description" content="Empresa de soluções digitais"/>
       <meta name="keywords" content="Soluções web, desenvolvimento de sites, desenvolvimento de software, hlcode, jau, jau e região, desenvolvimento web, desenvolvimento full-stack"/>
       <meta name="author" content="HLCode"/>
     </Head>
@@ -88,6 +72,10 @@ const Home_render = (
         </div>
       </div>
     </section>
+    <section className={styles.textCaller}>
+      
+    </section>
+  
   </div>
 
 )
