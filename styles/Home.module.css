@@ -191,7 +191,7 @@
 
   .banner,
   .overlay {
-    height: 200vh;
+    height: 150vh;
   }
 
   .box_form_banner {
@@ -240,6 +240,6 @@
 @media screen and (max-width: 380px) {
   .banner,
   .overlay {
-    height: 60rem;
+    height: 100rem;
   }
 }
