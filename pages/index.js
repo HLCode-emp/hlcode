@@ -6,9 +6,9 @@ const Header = (
   <div>
     <Head>
       <meta charset="utf-8"/>
-      {/* <meta name="description" content="Empresa web"/>
+      <meta name="description" content="Empresa web"/>
       <meta name="keywords" content="Soluções web, desenvolvimento de sites, desenvolvimento de software, hlcode, jau, jau e região, desenvolvimento web, desenvolvimento full-stack"/>
-      <meta name="author" content="HLCode"/> */}
+      <meta name="author" content="HLCode"/>
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -20,6 +20,16 @@ const Header = (
 
 const Home_render = (
   <div>
+    {/* header */}
+    <Head>
+      <title>HLCode - Soluções web</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="Empresa web"/>
+      <meta name="keywords" content="Soluções web, desenvolvimento de sites, desenvolvimento de software, hlcode, jau, jau e região, desenvolvimento web, desenvolvimento full-stack"/>
+      <meta name="author" content="HLCode"/>
+    </Head>
+
+    {/* Page */}
     <div className={styles_main.header}>
       <div className={styles_main.container}>
         <a href="/" className={styles_main.title}>HLCODE</a>
@@ -85,13 +95,6 @@ const Home_render = (
 
 function Home() {
   return (
-    <div>
-      <Head>
-        <title>This page has a title 🤔</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-    </div>,
     Home_render
   )
 }
