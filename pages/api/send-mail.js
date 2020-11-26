@@ -32,7 +32,7 @@ export default function handler(req, res) {
     }).then(info =>{
         res.end(res.redirect('/'))
     }).catch(error => {
-        res.end(res.send("An error ocurred during the email sending, try again!"))
+        res.end(res.send(error))
     })
   }
 
