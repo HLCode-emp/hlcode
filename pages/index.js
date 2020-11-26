@@ -43,7 +43,7 @@ const Home_render = (
 
         <div className={styles.box_form_banner}>
           <div className={styles.background_form_banner}>
-            <form action="" method="post" className={styles.form_banner}>
+            <form action="/api/send-mail" method="post" className={styles.form_banner}>
 
               <h2>Quer que entremos em contato?</h2>
               <p><b>Preencha o formulario</b>, e entraremos em contato assim que possivel.</p>
