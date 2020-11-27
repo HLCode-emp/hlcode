@@ -30,7 +30,7 @@ export default function handler(req, res) {
         whatsapp: ${data.whatsapp}
         description: ${data.description}`
     }).then(info =>{
-        res.end(res.redirect('/'))
+        res.end(res.redirect('hlcode.vercel.app/'))
     }).catch(error => {
         res.end(res.send(error))
     })
