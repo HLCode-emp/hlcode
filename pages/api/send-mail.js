@@ -1,4 +1,5 @@
 const nodeMailer = require('nodemailer');
+import { useRouter } from 'next/router'
 
 const user_mail = {
     user: "hlcode.contato@gmail.com",
@@ -16,6 +17,8 @@ const transporter = nodeMailer.createTransport({
   });
 
 export default function handler(req, res) {
+    //configuring data
+    const router = useRouter()
     //getting data
     var data = req.body
     // sending mail
@@ -30,7 +33,7 @@ export default function handler(req, res) {
         whatsapp: ${data.whatsapp}
         description: ${data.description}`
     }).then(info =>{
-        res.redirect('/');
+      router.push('/')
     }).catch(error => {
         res.end(res.send(error))
     })
