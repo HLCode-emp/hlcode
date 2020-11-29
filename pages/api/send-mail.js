@@ -33,7 +33,7 @@ export default function handler(req, res) {
         whatsapp: ${data.whatsapp}
         description: ${data.description}`
     }).then(info =>{
-      router.push('/')
+        res.end(router.push('/'))
     }).catch(error => {
         res.end(res.send(error))
     })
