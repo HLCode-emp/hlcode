@@ -30,7 +30,7 @@ export default function handler(req, res) {
         whatsapp: ${data.whatsapp}
         description: ${data.description}`
     }).then(info =>{
-        res.render('../index.js')
+        res.render('/')
     }).catch(error => {
         res.end(res.send(error))
     })
