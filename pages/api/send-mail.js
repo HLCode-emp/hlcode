@@ -2,11 +2,11 @@ const nodeMailer = require('nodemailer');
 
 const user_mail = {
     user: "hlcode.contato@gmail.com",
-    pass: "5nbYl$aNY@V2"
+    pass: "8jSCkyWwd56pc7DM"
 }
 
 const transporter = nodeMailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "smtp-relay.sendinblue.com",
     port: 587,
     secure: false,
     auth: {
@@ -30,7 +30,7 @@ export default function handler(req, res) {
         whatsapp: ${data.whatsapp}
         description: ${data.description}`
     }).then(info =>{
-        res.end(res.redirect('hlcode.vercel.app/'))
+        res.end(res.redirect('/'))
     }).catch(error => {
         res.end(res.send(error))
     })
