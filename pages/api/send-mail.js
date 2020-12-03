@@ -32,7 +32,7 @@ const transporter = nodeMailer.createTransport({
         whatsapp: ${data.whatsapp}
         description: ${data.description}`
     }).then(info =>{
-      res.redirect('/slah')
+      res.redirect(301, '/slah')
     }).catch(error => {
       res.send(error)
     })
