@@ -1,6 +1,4 @@
 const nodeMailer = require('nodemailer');
-var express = require('express')
-var app = express()
 
 const user_mail = {
     user: "hlcode.contato@gmail.com",
@@ -32,7 +30,7 @@ const transporter = nodeMailer.createTransport({
         whatsapp: ${data.whatsapp}
         description: ${data.description}`
     }).then(info =>{
-      res.redirect(301, '/slah')
+      res.redirect(301, '/portifolio')
     }).catch(error => {
       res.send(error)
     })
