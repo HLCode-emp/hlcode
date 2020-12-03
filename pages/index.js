@@ -11,6 +11,8 @@ const Home_render = (
       <meta name="description" content="Empresa de soluções digitais"/>
       <meta name="keywords" content="Soluções web, desenvolvimento de sites, desenvolvimento de software, hlcode, jau, jau e região, desenvolvimento web, desenvolvimento full-stack"/>
       <meta name="author" content="HLCode"/>
+
+      <link rel="shortcut icon" href="../public/favicon.ico" />
     </Head>
 
     {/* Page */}

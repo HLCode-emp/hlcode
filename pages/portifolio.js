@@ -10,6 +10,8 @@ const Home_render = (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="Portifólio da HLCode"/>
       <meta name="author" content="HLCode"/>
+
+      <link rel="shortcut icon" href="../public/favicon.ico" />
     </Head>
 
     {/* Page */}
