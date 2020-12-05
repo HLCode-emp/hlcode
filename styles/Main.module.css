@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
-  max-width: 1048px;
-  margin: 0 auto;
+  max-width: 1080px;
+  margin: 3.5vh auto 0 auto;
   padding: 0 2%;
 }
 
@@ -15,9 +15,12 @@
   text-align: center;
 }
 
+.header .container a{
+  display: inline-block;
+}
+
 .title {
   font-family: leixo;
-
   color: #ff7a00;
   font-size: 40px;
 }

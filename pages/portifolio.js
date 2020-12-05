@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import styles_main from '../styles/Main.module.css'
-import styles from '../styles/Portifolio.module.css'
+import main from '../styles/Main.module.css'
+import home from '../styles/Home.module.css'
+import portifolio from '../styles/Portifolio.module.css'
+import UncontrolledLottie from '../components/UncontrolledLottie';
 
 const Home_render = (
   <div>
@@ -13,7 +15,11 @@ const Home_render = (
     </Head>
 
     {/* Page */}
-    <h1>Hello, world</h1>
+    <div className={main.header}>
+      <div className={main.container}>
+        <a href="/" className={main.title}><UncontrolledLottie /></a>
+      </div>
+    </div>
   </div>
 
 )

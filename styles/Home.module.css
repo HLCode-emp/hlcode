@@ -38,7 +38,7 @@
 .box_call {
   width: 50%;
   float: left;
-  height: 700px;
+  height: 600px;
 
   display: flex;
   align-items: center;
@@ -84,7 +84,7 @@
 
 /* form */
 .box_form_banner {
-  height: 750px;
+  height: 650px;
 
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@
 
   width: 100%;
   max-width: 400px;
-  height: 550px;
+  height: 575px;
 
   padding: 20px;
 }
