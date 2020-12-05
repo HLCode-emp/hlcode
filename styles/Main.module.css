@@ -17,6 +17,7 @@
 
 .header .container a{
   display: inline-block;
+  max-width: 100vw;
 }
 
 .title {
