@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../public/lotties/data.json'
+import animationData from '../public/lotties/title.json'
 
-class UncontrolledLottie extends Component {
+class titleAnimation extends Component {
   render(){
 
     const defaultOptions = {
@@ -24,4 +24,4 @@ class UncontrolledLottie extends Component {
   }
 }
 
-export default UncontrolledLottie
+export default titleAnimation

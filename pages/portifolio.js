@@ -2,7 +2,8 @@ import Head from 'next/head'
 import main from '../styles/Main.module.css'
 import home from '../styles/Home.module.css'
 import portifolio from '../styles/Portifolio.module.css'
-import UncontrolledLottie from '../components/UncontrolledLottie';
+import TitleAnimation from '../components/TitleAnimation';
+import PortifolioAnimation from '../components/PortifolioAnimation';
 
 const Home_render = (
   <div>
@@ -17,7 +18,13 @@ const Home_render = (
     {/* Page */}
     <div className={main.header}>
       <div className={main.container}>
-        <a href="/" className={main.title}><UncontrolledLottie /></a>
+        <a href="/" className={main.title}><TitleAnimation /></a>
+      </div>
+    </div>
+
+    <div className={portifolio.banner}>
+      <div className={main.container}>
+        <PortifolioAnimation />
       </div>
     </div>
   </div>
