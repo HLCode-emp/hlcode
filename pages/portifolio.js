@@ -22,13 +22,12 @@ const Home_render = (
       </div>
     </div>
 
-    <div className={portifolio.banner}>
-      <div className={main.container}>
-        <PortifolioAnimation />
-      </div>
+    <div className={portifolio.container}>
+      <div className={portifolio.banner}></div>
     </div>
-  </div>
+    <div className={portifolio.animation}><PortifolioAnimation /></div>
 
+  </div>
 )
   
 

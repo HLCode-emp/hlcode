@@ -1,5 +1,20 @@
-.banner {
+.container {
     width: 100vw;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.35);
+    max-width: 350px;
+    margin: 3.5vh auto 0 auto;
+  }
+
+.banner {
+    margin: 0 auto;
+    height: 55px;
+    background-color: #000;
+    border-radius: 100px;
+
+    position: relative;
+}
+
+.animation {
+  position: absolute;
+  left: calc(50vw - 225px);
+  top: 13.5vh;
 }

@@ -18,8 +18,8 @@ class portifolioAnimation extends Component {
     return(
       <div>
         <Lottie options={defaultOptions}
-              width={500}
-              height={100}
+              width={450}
+              height={55}
         />
       </div>
     )
