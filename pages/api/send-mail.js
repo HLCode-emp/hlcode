@@ -33,6 +33,6 @@ export default function handler(req, res) {
   }).then(info => {
     res.redirect(301, '/portifolio')
   }).catch(error => {
-    res.send(user_mail)
+    res.send(user_mail.pass)
   })
 }
