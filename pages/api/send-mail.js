@@ -7,9 +7,7 @@ const user_mail = {
 }
 
 const transporter = nodeMailer.createTransport({
-  host: "smtp.zoho.com",
-  port: 465,
-  secure: true,
+  service: 'Gmail',
   auth: {
     user: user_mail.user,
     pass: user_mail.pass
@@ -22,7 +20,7 @@ export default function handler(req, res) {
   // sending mail
   transporter.sendMail({
     from: user_mail.user,
-    to: user_mail.user,
+    to: "hlcode.contato@gmail.com",
     subject: "Entrar em contato",
     text: `
         name: ${data.name}
